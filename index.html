@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    
+      
+      <div class="contact-container">
+        <div id="back-container"></div>
+        <form  action="https://api.web3forms.com/submit" method="POST" class="Contact-form">
+            <div class="contact-left-title">
+
+              <h1>Lets Get In Touch</h1>
+
+              <hr>
+
+            </div>
+
+            <input type="hidden" name="access_key" value="70ade45f-1705-4767-8edd-e610586f6320">
+            <input type="text" name="name" placeholder="Your Firstname" class="contact-input" required>
+            <input type="text" name="contact" placeholder="Your Contact No." class="contact-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+            <textarea name="messsage" placeholder="Your Messsage" class="contact-input" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    
+
+    <div class="gradient-bg">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGrapic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+    
+  </body>
+</html>
